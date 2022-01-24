@@ -1,0 +1,1 @@
+# manifest for swift messaging
