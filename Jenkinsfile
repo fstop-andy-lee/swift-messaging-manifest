@@ -5,10 +5,10 @@ node {
     def  GIT_USER_MAIL = 'andy_lee@fstop.com.tw'
     def  GIT_USER_NAME = 'fstop-andy-lee'
     def  GIT_REPO = 'swift-messaging-manifest'
-    def  DEPLOY_FILE = 'swfit-messaging-service-deployment.yaml'
+    def  DEPLOY_FILE = 'swift-messaging-service-deployment.yaml'
     
     def  GIT_HOST = 'github.com'
-    def  GIT_BRANCH = 'main'    
+    def  GIT_BRANCH = 'master'    
     
     stage('Clone repository') {
         checkout scm
