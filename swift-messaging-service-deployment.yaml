@@ -202,23 +202,23 @@ spec:
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: swfit-messaging-route
+  name: swift-messaging-route
   namespace: default
   creationTimestamp: null
   labels:
-    app: swfit-messaging
+    app: swift-messaging
 spec:
   host: swift.online.ocp4.com
   to:
     kind: Service
-    name: swfit-messaging
+    name: swift-messaging
     weight: 100
   port:
     targetPort: 8080
   wildcardPolicy: None
 status:
   ingress:
-    - host: swfit-messaging.online.ocp4.com
+    - host: swift-messaging.online.ocp4.com
       routerName: default
       conditions:
         - type: Admitted
