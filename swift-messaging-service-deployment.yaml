@@ -130,19 +130,11 @@ metadata:
 spec:
   selector:
     app: swift-messaging
-    
-  #type: NodePort
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 8080
-      #nodePort: 30082
       targetPort: 8080
-      
-  #type: LoadBalancer
-  #ports:
-  #  - name: http
-  #    port: 8888
-  #    targetPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -218,7 +210,7 @@ spec:
   wildcardPolicy: None
 status:
   ingress:
-    - host: swift-messaging.online.ocp4.com
+    - host: swift.online.ocp4.com
       routerName: default
       conditions:
         - type: Admitted
