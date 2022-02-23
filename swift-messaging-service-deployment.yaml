@@ -154,7 +154,7 @@ spec:
       serviceAccountName: app-user
       containers:
         - name: swift-messaging
-          image: andylee1973/swift-messaging:1.0.0
+          image: andylee1973/swift-messaging:latest
           imagePullPolicy: Always #IfNotPresent
           args: ["--spring.config.location=/home/spring/app/conf/"]
           ports:
